@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shivam Gandu</title>
+</head>
+<body>
+    <H1>Breaking News</H1>
+<h2> गुदहियारी  मे एक  युवा  गंड मराते हुए  पकड़ा  गया</h2>
+
+    <div style="text-align:center"> 
+        <button onclick="playPause()">Play/Pause</button> 
+        <button onclick="makeBig()">Big</button>
+        <button onclick="makeSmall()">Small</button>
+        <button onclick="makeNormal()">Normal</button>
+        <br><br>
+        <video id="video1" width="420" controls>
+          <source src="shivam.mp4">
+        </video>
+      </div> 
+      
+
+</body>
+<script> 
+    var myVideo = document.getElementById("video1"); 
+    
+    function playPause() { 
+      if (myVideo.paused) 
+        myVideo.play(); 
+      else 
+        myVideo.pause(); 
+    } 
+    
+    function makeBig() { 
+        myVideo.width = 560; 
+    } 
+    
+    function makeSmall() { 
+        myVideo.width = 320; 
+    } 
+    
+    function makeNormal() { 
+        myVideo.width = 420; 
+    } 
+    </script> 
+</html>
